@@ -20,5 +20,15 @@ printMessage (resultAnnounce)
 
 console.log('wyświetlana wiadomość to: ' + resultAnnounce);  //wyswietla wynik w konsoli
 
-
 }
+
+
+document.getElementById('play-rock').addEventListener('click',function(){  //wciśnięcie guzika "1"
+  playGame(1);
+});
+document.getElementById('play-paper').addEventListener('click',function(){  //wciśnięcie guzika "2"
+  playGame(2);
+});
+document.getElementById('play-scissors').addEventListener('click',function(){  //wciśnięcie guzika "3"
+  playGame(3);
+});
