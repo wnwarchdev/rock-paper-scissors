@@ -3,19 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<section class="logo">
 	<div class="container">
-		<div id="buttons">
-
-		<button id="play-rock">Kamień</button>
-		<button id="play-paper">Papier</button>
-		<button id="play-scissors">Nożyce</button>
-
-		</div>
-		<div id="messages"></div>
+		<h1><span id="play-rock">Kamień</span> x <span id="play-paper">Papier</span> x <span id="play-scissors">Nożyce</span></h1>
+		<p>Kamień tępi nożyce : Papier owija kamień : Nożyce tną papier</p>
 	</div>
+</section>
+
+<section>
+	<div class="container">
+		<img class="bubble" src="images/image-bubble.png" alt="bubble">
+		<img class="computer" src="images/image-computer.png" alt="bubble">
+		<div id="messages">
+				<p>Wybierz swój ruch!<br>(...)</p>
+		</div>
+
+	</div>
+</section>
+
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

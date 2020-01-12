@@ -2,6 +2,7 @@ function printMessage(msg){ //dekalaracja
 	var div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
+	console.log(div);
 }
 
 function clearMessages(){ //dekalaracja
@@ -38,12 +39,12 @@ function displayResult(argComputerMove, argPlayerMove){ //dekalaracja
 		return('Ty wygrywasz!');
 	}
 	else if (argComputerMove == argPlayerMove){ //warunek remisu
-    return('Remis...');
+    return('Remis!');
   }
-	else if(argPlayerMove == 'nieznany ruch') { //w przypadku nieznanego ruchu
+	/*else if(argPlayerMove == 'nieznany ruch') { //w przypadku nieznanego ruchu
 		return('Spróbuj grać wedle reguł');
-	}
+	}*/
 	else {
-    return('Tym razem przegrywasz :('); //pozostałe warunki - przegrana
+    return('Tym razem przegrywasz...'); //pozostałe warunki - przegrana
   }
 }
