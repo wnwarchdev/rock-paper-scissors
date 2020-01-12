@@ -3,16 +3,14 @@
 body {
   font-family: "Roboto Slab", serif;
   text-align: center;
+  transition: all 1s ease;
 }
 
 .container {
   position: relative;
 }
 
-img {
-  position: absolute;
-}
-
+/*Heading*/
 h1,
 .counter {
   font-size: 50px;
@@ -22,6 +20,16 @@ h1,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+span:hover {
+  color: #FFAA00;
+  text-shadow: 2px 1px black;
+}
+
+/*Game*/
+img {
+  position: absolute;
 }
 
 .computer {
@@ -36,11 +44,6 @@ h1,
   height: 200px;
   transform: translate(-50%, -55px) scaleX(-1);
   z-index: -5;
-}
-
-span:hover {
-  color: #FFAA00;
-  text-shadow: 2px 1px black;
 }
 
 #messages {
@@ -61,11 +64,22 @@ span:hover {
   margin-top: 60px;
 }
 
-.counter-computer {
+#counter-computer {
   text-align: left;
 }
 
-.counter-player {
+#counter-player {
   text-align: right;
 }
+
+/*.counter p {
+
+transition: all 1s ease;
+}
+
+.counter p:hover {
+transform: scale(0.8);
+transition: all 1s ease;
+}
+*/
 /*# sourceMappingURL=style.css.map */
