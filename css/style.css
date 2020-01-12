@@ -10,6 +10,15 @@ body {
   position: relative;
 }
 
+/*Animation*/
+@keyframes fadein {
+  from {
+    color: #FFAA00;
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
 /*Heading*/
 h1,
 .counter {
@@ -70,6 +79,10 @@ img {
 
 #counter-player {
   text-align: right;
+}
+
+.fadeIn {
+  animation: fadein .8s;
 }
 
 /*.counter p {
