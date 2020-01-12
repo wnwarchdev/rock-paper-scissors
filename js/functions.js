@@ -5,6 +5,15 @@ function printMessage(msg){ //dekalaracja
 	console.log(div);
 }
 
+function pointCount(player){ //dekalaracja
+	let countCurrent = parseInt(document.getElementById(player).innerHTML);
+	//console.log(countCurrent)
+	let countNew = countCurrent + 1;
+	//console.log(countNew);
+	document.getElementById(player).innerHTML = countNew;
+	//console.log("działa!");
+}
+
 function clearMessages(){ //dekalaracja
 	document.getElementById('messages').innerHTML = '';
 }
@@ -30,21 +39,29 @@ function displayResult(argComputerMove, argPlayerMove){ //dekalaracja
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove); //informuje o wykonanych ruchach
 
   if( argComputerMove == 'kamień' && argPlayerMove == 'papier') { //trzy warunki wygranej, fajnie gdyby uzyc operatora OR i zapisac w jednej linii...
-    return('Ty wygrywasz!'); //zmieniłem na return z print zeby pokazac wynik w konsoli
+		pointCount('counter-player');
+		return('Ty wygrywasz!'); //zmieniłem na return z print zeby pokazac wynik w konsoli
+
   }
 	else if( argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
-    return('Ty wygrywasz!');
+		pointCount('counter-player');
+		return('Ty wygrywasz!');
+
   }
 	else if( argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
+		pointCount('counter-player');
 		return('Ty wygrywasz!');
+
 	}
 	else if (argComputerMove == argPlayerMove){ //warunek remisu
     return('Remis!');
+
   }
 	/*else if(argPlayerMove == 'nieznany ruch') { //w przypadku nieznanego ruchu
 		return('Spróbuj grać wedle reguł');
 	}*/
 	else {
-    return('Tym razem przegrywasz...'); //pozostałe warunki - przegrana
+		pointCount('counter-computer');
+    return('Tym razem przegrywasz...'); //pozostałe warunki - przegrana ; czy return konczy dzialanie funkcji? kiedy dalem point count za return to nie działalo...
   }
 }

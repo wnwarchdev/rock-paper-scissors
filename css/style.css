@@ -13,16 +13,21 @@ img {
   position: absolute;
 }
 
-h1 {
+h1,
+.counter {
   font-size: 50px;
   font-family: "Bangers", cursive;
   margin-bottom: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .computer {
   width: 250px;
   height: 150px;
-  transform: translate(-45%, 100px);
+  transform: translate(-40%, 100px);
   z-index: -10;
 }
 
@@ -44,5 +49,23 @@ span:hover {
 
 #messages div:last-of-type {
   font-weight: 700;
+}
+
+.counter {
+  width: 350px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 60px;
+}
+
+.counter-computer {
+  text-align: left;
+}
+
+.counter-player {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
