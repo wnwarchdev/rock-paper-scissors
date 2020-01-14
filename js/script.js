@@ -10,15 +10,11 @@ console.log('Psst, komputer wylosował: ' + computerMove + '... Masz szansę zde
 
 //let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');  //pyta gracza o wybór zagrania
 
-console.log('Gracz wpisał: ' + playerInput);  //wyswietla wynik w konsoli
-
 let playerMove = getMoveName(playerInput); //nadaje nazwę ruchu gracza wg klucza do zmiennej
 
 let resultAnnounce = displayResult (computerMove, playerMove) //uruchamia funkcję z uzyciem dwu zmiennych
 
 printMessage (resultAnnounce)
-
-console.log('wyświetlana wiadomość to: ' + resultAnnounce);  //wyswietla wynik w konsoli
 
 }
 
