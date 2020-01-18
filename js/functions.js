@@ -1,5 +1,5 @@
 function printMessage(msg){ //dekalaracja
-	let div = document.createElement('div');
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
@@ -15,18 +15,18 @@ function clearMessages(){ //dekalaracja
 
 function addFade(id){ //dekalaracja
 	"use strict";
-	let element = document.getElementById(id);
+	const element = document.getElementById(id);
 	element.classList.remove("fadeIn");
 	void element.offsetWidth; // bez tego jednak nie działa
 	element.classList.add("fadeIn");
 }
 
 function getMoveName(argMoveId){ //dekalaracja
-  if(argMoveId === 1){
-    return 'kamień';
+	if(argMoveId === 1){
+		return 'kamień';
   }
 	else if(argMoveId === 2) {
-  	return 'papier';
+		return 'papier';
   }
 	else if(argMoveId === 3) {
 		return 'nożyce';
@@ -37,7 +37,7 @@ function displayResult(argComputerMove, argPlayerMove){ //dekalaracja
 
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove); //informuje o wykonanych ruchach
 
-  if (( argComputerMove === 'kamień' && argPlayerMove === 'papier') || ( argComputerMove === 'papier' && argPlayerMove === 'nożyce') || ( argComputerMove === 'nożyce' && argPlayerMove === 'kamień')) {
+	if (( argComputerMove === 'kamień' && argPlayerMove === 'papier') || ( argComputerMove === 'papier' && argPlayerMove === 'nożyce') || ( argComputerMove === 'nożyce' && argPlayerMove === 'kamień')) {
 		pointCount('counter-player');
 		addFade('counter-player');
 		return('Ty wygrywasz!');
@@ -50,6 +50,6 @@ function displayResult(argComputerMove, argPlayerMove){ //dekalaracja
 	else {
 		pointCount('counter-computer');
 		addFade('counter-computer');
-    return('Tym razem przegrywasz...'); //pozostałe warunki - przegrana
+		return('Tym razem przegrywasz...'); //pozostałe warunki - przegrana
   }
 }
