@@ -17,7 +17,7 @@ body {
 
 /*Animation*/
 @keyframes fadein {
-    from { color:#FFAA00; transform: scale(4); opacity: 0;}
+    from { color:#FFAA00; transform: scale(2); opacity: 0;}
 }
 
 /*Heading*/
@@ -31,13 +31,8 @@ user-select: none;
 }
 
 span:hover {
-<<<<<<< HEAD
-  color: red;
-  text-shadow: 2px 1px black;
-=======
   color: #FFAA00;
   text-shadow: 2px 1px pink;
->>>>>>> devWojtek
 }
 
 
