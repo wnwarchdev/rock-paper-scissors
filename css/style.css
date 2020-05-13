@@ -14,7 +14,7 @@ body {
 @keyframes fadein {
   from {
     color: #FFAA00;
-    transform: scale(3);
+    transform: scale(4);
     opacity: 0;
   }
 }
