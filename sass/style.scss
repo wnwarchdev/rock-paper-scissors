@@ -8,7 +8,7 @@ $font-head: 'Bangers', cursive;
 body {
   font-family: $font-text;
   text-align: center;
-  transition: all 1s ease;
+  transition: all 2s ease;
 }
 
 .container {
@@ -24,15 +24,20 @@ body {
 
 h1,
 .counter {
-font-size: 50px;
+font-size: 45px;
 font-family: $font-head;
 margin-bottom: 10px;
 user-select: none;
 }
 
 span:hover {
+<<<<<<< HEAD
   color: red;
   text-shadow: 2px 1px black;
+=======
+  color: #FFAA00;
+  text-shadow: 2px 1px pink;
+>>>>>>> devWojtek
 }
 
 

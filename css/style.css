@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto Slab", serif;
   text-align: center;
-  transition: all 1s ease;
+  transition: all 2s ease;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 /*Heading*/
 h1,
 .counter {
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Bangers", cursive;
   margin-bottom: 10px;
   -webkit-user-select: none;
@@ -32,8 +32,13 @@ h1,
 }
 
 span:hover {
+<<<<<<< HEAD
   color: red;
   text-shadow: 2px 1px black;
+=======
+  color: #FFAA00;
+  text-shadow: 2px 1px pink;
+>>>>>>> devWojtek
 }
 
 /*Game*/
